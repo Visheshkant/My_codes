@@ -1,0 +1,288 @@
+body
+{
+	font-family: sans-serif;
+	position: relative;
+    
+}
+h2,h1,h3
+{
+	text-align: center;
+}
+
+*
+{
+ margin:0px;
+ padding:0px;
+}
+#d1 ul
+{
+	list-style: none;
+}
+h2
+{
+	font-size: 40px;
+	text-decoration: underline;
+}
+#d1 ul li
+{
+ background-color:#ff944d;
+ width:178px;
+ left: 8px;
+ border:1px solid white;
+ height:50px;
+ font-weight: bold;
+ line-height:50px;
+ text-align:center;
+ float:left;
+ color:white;
+ font-size:18px;
+ position: relative;
+ z-index: 999;
+ border-radius: 10px;
+ transition: all 0.7s;
+}
+#d1 ul li:hover
+{
+ background-color: #e67300;
+ opacity: 0.8;
+ color:#1a1a1a;
+ cursor: pointer;
+ animation-name: delay_dd;
+ animation-duration: 1.5s;
+}
+@keyframes delay_dd
+{
+	from
+	{
+		opacity: 0.6;
+	}
+	to
+	{
+		opacity: 1;
+	}
+}
+#d1 ul ul
+{
+ display: none;
+}
+#d1 ul li:hover > ul{
+ display:block;
+} 
+#container
+{
+	width: 90%;
+	height: 450px;
+	border: 1px solid black;
+	margin: 0 auto; 
+	position: absolute;
+	top: 245px;
+	left: 60px;
+}
+
+#container > img
+{
+	width:100%;
+	height: 100%;
+	position: absolute;
+}
+
+#container > .btn
+{
+	position: absolute;
+	width:100px;
+	height:50px;
+	border: none;
+	
+	top:41%;
+	background:rgba(242, 242, 242, 0.3);
+	color:black;
+	font-size:20px;
+}
+
+#container #btn1:hover
+{
+    background-color: rgba(255, 230, 204, 0.3) ;
+}
+
+#container #btn2:hover
+{
+	background-color:  rgba(255, 230, 204, 0.3);
+}
+#container > #btn2
+{
+position: relative;
+	right:-91.5%;
+	top:30%; 
+}
+#Image_satya
+{
+	position:relative;
+	left:52%;
+}
+
+#pic_box
+{
+	width: 1140px;
+	height: 300px;
+	border: 1px solid black; 
+	position: absolute;
+	top: 730px;
+	left: 55px;
+	background-color: rgb(255, 166, 77);
+	animation-iteration-count: infinite;
+	animation-name: color_change_box_pic;
+	animation-duration: 5s;
+}
+@keyframes color_change_box_pic
+{
+	0%
+	{
+       background-color: #ff8533;
+	}
+	30%
+	{
+       background-color: #ff944d;
+	}
+	60%
+	{
+       background-color:#ffb380;
+	}
+	100%
+	{
+       background-color: #ffa64d;
+	}
+}
+
+#span_1
+{
+	position: absolute;
+	top:10px;
+	left: 20px;
+}
+#span_2
+{
+	position: absolute;
+	top:10px;
+	left: 680px;
+}
+#yogi_name
+{
+	position: absolute;
+	top: 240px;
+	left: 30px;
+}
+#yogi_speech
+{
+	height: 250px;
+	width: 200px;
+	overflow: visible;
+	left: 260px;
+	position: absolute;
+	top: 10px; 
+	font-family: Bender;
+	cursor: pointer;
+}
+#radha_name
+{
+	position: absolute;
+	top: 250px;
+	left: 660px;
+}
+#Radha_speech
+{
+	height: 250px;
+	width: 200px;
+	overflow: visible;
+	left: 920px;
+	position: absolute;
+	top: 10px; 
+	font-family: Bender;
+	cursor: pointer;
+}
+#vr-1
+{
+	border:1px solid black;
+	position: absolute;
+	left: 550px;
+	top: 10px;
+	height: 280px;
+}
+#pm_box
+{
+	width: 1140px;
+	height: 570px;
+	border: 1px solid black; 
+	position: absolute;
+	top: 1070px;
+	left: 55px;
+	background-color:#ffcc99;
+	box-shadow: 10px 20px 60px black;
+	animation: modi_movement 4s linear  infinite alternate; 
+}
+  @keyframes modi_movement{ 
+                0% {left:50px; top:1080px;}
+                75% {left:50px; top:1100px;}
+                100%{left:50px; top:1080px;} 
+            }
+
+
+#modi_name
+{
+	position: absolute;
+	top: 500px;
+	left: 260px;
+}
+#modi_speech
+{
+    height: 450px;
+	width: 300px;
+	overflow: visible;
+	left: 800px;
+	position: absolute;
+	top: 20px;	
+	cursor: pointer;
+	font-family: Bender;
+}
+#modi_pic
+{
+	box-shadow:20px 10px 50px black;
+}
+.partner
+{
+	width: 100%;
+	height: 250px;
+	border:0px solid black;
+	position: absolute;
+	top: 1720px;
+}
+#footer
+{
+	top: 1930px;
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	border:1px solid black;
+	background-color: black;
+	color: white; 
+	line-height: 1.6;
+	font-size: 17px;
+}
+#inside_footer
+{
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	cursor: pointer;
+}
+#inside_footer2
+{
+	position: absolute;
+	top: 50px;
+	left: 440px;
+	cursor: pointer;
+}
+.under
+{
+	text-decoration: underline;
+	font-weight: bold;
+}

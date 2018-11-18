@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>Agriculture</title>
+	<link rel="stylesheet" type="text/css" href="shkla.css">
+	<script type="text/javascript">
+		var index=1;
+                                     
+	    function plusIndex(n)
+	    {
+	    	index=index+n;
+	    	showImage(index);
+	    }
+	    
+		showImage(1);
+
+	    function showImage(n)
+		{
+			var i;
+			var x=document.getElementsByClassName("slides");
+			if(n>x.length)
+			{
+				index=1;
+			}
+			if(n<1)
+			{
+				index=x.length;
+			}
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display = "none";
+			}
+
+			x[index-1].style.display="block";
+		}
+	</script>
+</head>
+<body>
+ <h2>GOVERNMENT OF INDIA</h2>
+ <img width="300px" height="90px" src="swach.jpg"/>
+ <img id="Image_satya" width="300px" height="90px" src="SATYA.JPG"/>
+ <h1>MINISTRY OF AGRICULTURE AND FARMER WELFARE</h1>
+ <div id="d1"><ul>
+ 	<li>HOME</li>
+ 	<li>ABOUT MINISTRY</li>
+ 	<li>DEPARTMENTS
+ 		<ul>
+ 			<li><a href="https://www.google.com">Agriculture</a></li>
+ 			<li><a href="iframes.htm">HUSBANDRY</a></li>
+ 			<li>AGRICULTURAL </li>
+ 		</ul></li>
+ 	<li>MINISTERS
+ 		<UL>
+ 			<li>UNION MINISTER</li>
+ 			<li>STATE MINISTER</li>
+ 		</UL></li>
+ 	<li>PARLIAMENT Q&A<UL>
+ 			<li>LOK SABHA</li>
+ 			<li>RAJYA SABHA</li>
+ 		</UL></li>
+ 	<li>MEDIA
+ 		<UL>
+ 			<li>E-BOOK</li>
+ 		    <li>E-BULLETIN</li>
+ 		    <li>FARMER FRIENDLY HANDBOOK</li>
+ 		    <li>ACHIEVEMENT</li>
+ 		    <li>PHOTO GALLERY</li>
+ 		</UL></li>
+ 	<li>RELATED LINK
+ 		<UL>
+ 			<li>FARMER INCOME</li>
+ 			<li>FARMER PORTAL</li>
+ 			<li>M-KISAN PORTAL</li>
+ 			<li>SOIL PORTAL</li>
+ 			<li>RASHTRIYA</li>
+ 		</UL></li>
+ </ul></div>
+   <div id="container">
+   	<img class="slides" src="f1.jpg"/>
+   	<img class="slides" src="farmer1.jpg"/>
+   	<img class="slides" src="farmer2.jpg"/>
+   	<img class="slides" src="farmer3.jpg"/>     
+   	<img class="slides" src="farmer4.jpg"/>
+   	<button class="btn" onclick="plusIndex(-1)" id="btn1">&#8249;  LEFT</button>
+   	<button class="btn" onclick="plusIndex(1)" id="btn2"> RIGHT  &#8250;</button>
+   </div>
+  <div id="pic_box">
+  	<span id="span_1"><img src="adityanath yogi.png" width="200px" /></span>
+  	<span id="yogi_name"><p>Hon'ble CHIEF MINISTER<br/><h3>ADITYANATH YOGI</h3></p></span>
+  	<div id="yogi_speech"><h3>Yogi say's:</h3><br />Chief Minister Shri Yogi Aditya Nath has said that organic farming has the potential to provide livelihood to farmers and create employment opportunities for rural and urban people.</div>
+  	<span id="span_2"><img src="Agmin.png" width="200px"/></span>
+  	<span id="radha_name"><p>Hon'ble AGRICULTURE MINISTER<br/><h3>RADHA MOHAN SINGH</h3></p></span>
+  	<div id="radha_speech"><h3>Rafha Mohan syas:</h3><br />Minister of Agriculture and Farmers’ Welfare Shri Radha Mohan Singh while addressing the conclave of Chief Ministers of Himalayan states organized in Shimla said that Himalayan states are diverse in agricultural species, agricultural production systems and livestock breeds.</div>
+  	<div id="vr-1"></div>
+  </div>
+  <div id="pm_box">
+  	<span id="modi_pic"><img src="modi.jpg" /></span>
+  	<span id="modi_name"><p>Hon'ble Prime Minister<br/><h3>Shri NARENDRA MODI</h3></p></span>
+  	<div id="modi_speech"> <h3>PM MODI say's</h3><br />Twenty Embryo Transfer Technology Centres are being established in the country and a proposal of 19 centres has been approved so far .This was stated by the Minister of Agriculture and Farmers Welfare Shri Radha Mohan Singh at the foundation laying ceremony of Embryo transfer Technology ceremony of Embryo Transfer Technology (ETT) centre in the Bharatiya Agro Industries Foundation (BALF), Uruilikanchan, Pune.<br />  Union Minister of Agriculture and Farmers’ Welfare Shri Radha Mohan Singh has said that a developed agri food value chain in the country can not only enhance the farm income of farmers but also make available quality food to the consumers.<br/>The DAC&FW is organized into 27 Divisions and has five attached offices and twenty-one subordinate offices which are spread across the country for coordination with state level agencies and implementation of Central Sector Schemes in their respective fields.</div>
+  </div>
+  <div class="partner">
+  	<h3>BANNERS</h3>
+  	<span class="partner_img"><img src="b1.png" /></span>
+  	<span ><img src="b2.png" /></span>
+  	<span ><img src="b3.png" /></span>
+  	<span ><img src="b4.png" /></span>
+  	<span ><img src="b5.png" /></span>
+  	<span ><img src="b6.png" /></span>
+  </div>
+  <div id="footer">
+  	<div id="inside_footer">Built by <span class="under">Vishesh Kant Aggarwal</span></div>
+  	<div id="inside_footer2"><p>Website Content Managed by <span class="under">Department of Agriculture Cooperation & Farmers Welfare</span><br/>Designed, Developed and Hosted by <span class="under">National Informatics Centre( NIC )</span><br/>Last Updated: 08 Oct 2018</p></div>
+  </div>
+</body>
+</html>
