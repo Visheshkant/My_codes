@@ -1,7 +1,7 @@
 import java.util.*;
-class Switch1
+class Atm
 {
-	public static void main(String []Vishesh_bank)
+	public static void main(String []args)
 	{
 		Scanner kb=new Scanner(System.in);
 		System.out.println("\n");
